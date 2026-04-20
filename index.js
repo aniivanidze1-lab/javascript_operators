@@ -71,28 +71,28 @@ alert("თითოეული სტუმარი შეჭამს " + per
 // let x = 10;
 // let y = 5;
 // let result = (x > 5 && y < 10) || x++ === 10;
-// console.log(result);
+// console.log(result); პირველ ნაწილში (x > 5 && y < 10) ორივე სწორია, ამიტომ ეს ნაწილი იქნება true. მეორე ნაწილი (x++ === 10) ჯერ იყენებს ძველ მნიშვნელობას, რომელიც არის 10, ამიტომ ესეც true იქნება. საბოლოო შედეგი იქნება true || true, რაც არის true.
 
 
-// console.log(0 || "გამარჯობა"); 
-// console.log("აკაკი" && 100);    
+// console.log(0 || "გამარჯობა"); 0 არის false და "გამარჯობა" არის true, პასუხი იქნება "გამარჯობა".
+// console.log("აკაკი" && 100); "აკაკი" არის true და 100 არის true, ამიტომ პასუხი იქნება 100 (ბოლო მნიშვნელობა, რომელიც არის true).    
 
 
 // let nickname = ""; 
 // let finalName = nickname || "Guest";
-// console.log(finalName);
+// console.log(finalName); guest იქნება, რადგან nickname არის false (ცარიელია) და ამიტომ finalName იქნება"Guest"
 
 // let a = "ვაშლი" && "მსხალი" && "ატამი";
-// console.log(a); 
+// console.log(a); ატამი იქნება,ყველა არის true და საბოლოო შედეგი იქნება ბოლო true.
 
 // let b = "" || 0 || "ალუბალი";
-// console.log(b); 
+// console.log(b); ალუბალი იქნება, რადგან "" და 0 ორივე არის false, ამიტომ პასუხი იქნება "ალუბალი" (პირველი true მნიშვნელობა).
 
 // let c = "ყავა" && 0 && "ჩაი";
-// console.log(c); 
+// console.log(c); 0 იქნება, რადგან "ყავა" არის true, მაგრამ 0 არის false, ამიტომ პასუხი იქნება 0 (პირველი false მნიშვნელობა).
 
 // let d = "პური" || "წყალი";
-// console.log(d);
+// console.log(d); პური იქნება,პირველ true მნიშვნელობა.
 
 // let userHasPremium = true;
-// userHasPremium && console.log("მოგესალმებით, პრემიუმ მომხმარებელო!"); 
+// userHasPremium && console.log("მოგესალმებით, პრემიუმ მომხმარებელო!"); console.log მხოლოდ მაშინ შესრულდება, როცა userHasPremium არის true, ამიტომ ეს შეტყობინება გამოჩნდება.
